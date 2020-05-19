@@ -1,3 +1,7 @@
 .App {
   text-align: center;
 }
+.mynavi {
+  float: left;
+  margin-left: 20px;
+}
