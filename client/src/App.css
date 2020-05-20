@@ -14,15 +14,13 @@
   text-decoration: underline;
   color: red;
 }
-.linkStyle:focus , .morph:focus-within {
+.linkStyle:focus {
   outline: none;
   font-size: xx-large;
   text-decoration: line-through;
   text-decoration-style: wavy;
 }
-.nomorph:focus {
-  display: none;
-}
+
 .submitbutt {
   border: none;
   background-color: white;

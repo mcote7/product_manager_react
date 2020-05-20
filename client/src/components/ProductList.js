@@ -16,8 +16,8 @@ const ProductList = props => {
 
         <div>
             {props.products.map((product, idx)=>{
-                return  <p className="morph" key={idx}>product :&nbsp;&nbsp;
-                <Link className="nomorph" to={"/product/"+product._id}>{product.title}</Link>&nbsp;&nbsp;${product.price}&nbsp;&nbsp;
+                return <p key={idx}>product :&nbsp;&nbsp;
+                <Link to={"/product/"+product._id}>{product.title}</Link>&nbsp;&nbsp;${product.price}&nbsp;&nbsp;
                 <button className="linkStyle" onClick={(e)=>{deleteProduct(product._id)}}>delete this product</button></p>
             })}
         </div>
