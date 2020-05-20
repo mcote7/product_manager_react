@@ -15,10 +15,15 @@ const DisplayProducts = () => {
                 console.log(res.data);
             });
     },[])
+
+    const removeFromDom = productId => {
+        setProducts(products.filter(product => product._id !== productId));
+    }
+
     return (
         <div>
             <p>~ all products ~</p>
-            {loaded && <ProductList products={products}/>}
+            {loaded && <ProductList products={products} removeFromDom={removeFromDom}/>}
         </div>
     )
 }
